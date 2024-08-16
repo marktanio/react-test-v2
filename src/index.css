@@ -1,0 +1,196 @@
+html{
+  scroll-behavior:smooth;
+}
+
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+  background-color: #333;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.service-box {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+}
+
+.contact-form {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.contact-form form input, 
+.contact-form form textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.map {
+  margin: 20px auto;
+  max-width: 100%;
+  height: 450px;
+}
+
+/* custom */
+
+.services-custom {
+  background: linear-gradient(to top, #17153B, #2E236C, #433D8B);
+  min-height:1000px;
+}
+
+.navbar-color{
+  background-color:#17153B;
+  color:white;
+}
+
+.navbar-brand-padding {
+  padding: 10px 20px;
+}
+
+.nav-link-padding {
+  padding: 10px 15px;
+}
+
+.custom-btn{
+  background-color: #2E236C;
+  border:none;
+}
+
+.custom-btn:hover{
+  background-color: #433D8B;
+  border:none;
+}
+
+footer{
+  background-color:#17153B;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+  font-size:16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; 
+}
+
+.hero-background {
+  background-color: black;
+  background-image: url('./public/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  min-height: 80vh;
+  color: white;
+}
+
+.hero-background .container {
+  position: relative;
+  z-index: 2;
+}
+
+#main-section {
+  background-color: #f8f9fa;}
+
+.custom-main-heading,.custom-heading-contact{
+  color:#2E236C;
+}
+
+
+.clickable-box {
+  transition: transform 0.3s ease;
+}
+.clickable-box:hover {
+  transform: scale(1.05);
+}
+
+.custom-card-style{
+  background-color: #433D8B;
+  color:white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-image {
+  object-fit: cover;
+  height: 100%;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.service-title {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.custom-img {
+  border-radius: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-img:hover {
+  border: 5px solid #C8ACD6;
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(90deg, #17153B, #2E236C, #433D8B, #C8ACD6);
+  transform-origin: 0%;
+  z-index: 9999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
