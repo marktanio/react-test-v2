@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-background {
   background-color: black;
-  background-image: url('./public/hero-bg.jpg');
+  background-image: url('/react-test-v2/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

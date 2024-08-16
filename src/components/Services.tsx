@@ -36,7 +36,7 @@ const Services: React.FC = () => {
             >
               <Card className="text-white text-center rounded-3 overflow-hidden">
                 <Card.Img
-                  src="./public/nature-img.jpg"
+                  src="/react-test-v2/nature-img.jpg"
                   alt="Nature Photography"
                   className="img-fluid service-image"
                 />
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
             >
               <Card className="text-white text-center rounded-3 overflow-hidden">
                 <Card.Img
-                  src="./public/product-img.jpg"
+                  src="/react-test-v2/product-img.jpg"
                   alt="Product Photography"
                   className="img-fluid service-image"
                 />
@@ -85,7 +85,7 @@ const Services: React.FC = () => {
             >
               <Card className="text-white text-center rounded-3 overflow-hidden h-100">
                 <Card.Img
-                  src="./public/street-img.jpg"
+                  src="/react-test-v2/street-img.jpg"
                   alt="Street Photography"
                   className="img-fluid service-image"
                 />

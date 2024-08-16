@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { motion, useInView } from "framer-motion";
 
-
 const MainSection: React.FC = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -13,14 +12,14 @@ const MainSection: React.FC = () => {
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-left">
             <motion.img
-              src="./public/main-img.jpg"
-              alt="Placeholder"
+              src="/react-test-v2/main-img.jpg"
+              alt="Main"
               className="img-fluid mb-4 mb-md-0 custom-img"
               initial={{ opacity: 0 }}
               animate={{ opacity: isInView ? 1 : 0 }}
               transition={{ duration: 1, delay: 0.5 }}
               whileHover={{
-                borderColor: "#C8ACD6", // Border color on hover
+                borderColor: "#C8ACD6",
               }}
             />
           </Col>
@@ -31,7 +30,10 @@ const MainSection: React.FC = () => {
               animate={{ opacity: isInView ? 1 : 0 }}
               transition={{ duration: 1, delay: 0.75 }}
             >
-              <h2 className="mb-3 custom-main-heading" style={{ color: "purple" }}>
+              <h2
+                className="mb-3 custom-main-heading"
+                style={{ color: "purple" }}
+              >
                 Elevating Your Visual Experience
               </h2>
               <p>
@@ -61,7 +63,7 @@ const MainSection: React.FC = () => {
                 animate={{
                   background: [
                     "linear-gradient(270deg, #17153B, #2E236C, #433D8B, #C8ACD6)",
-                    "linear-gradient(270deg, #C8ACD6, #433D8B, #2E236C, #17153B)"
+                    "linear-gradient(270deg, #C8ACD6, #433D8B, #2E236C, #17153B)",
                   ],
                   backgroundSize: "400% 400%",
                   backgroundPosition: ["0% 50%", "100% 50%"],

@@ -10,7 +10,6 @@ const Hero: React.FC = () => {
       style={{ minHeight: "80vh" }}
     >
       <Container>
-        {/* Advanced Animation for the Heading */}
         <motion.h1
           className="hero-heading-custom mb-3"
           initial={{ opacity: 0, y: -50 }}
@@ -25,7 +24,6 @@ const Hero: React.FC = () => {
           Capture the Moment with John Doe
         </motion.h1>
 
-        {/* Fade-in Animation for the Paragraph */}
         <motion.p
           className="lead"
           initial={{ opacity: 0 }}
@@ -38,42 +36,44 @@ const Hero: React.FC = () => {
           into lasting memories. Let’s create something extraordinary together.
         </motion.p>
 
-        {/* Animated Button with Glowing Rainbow Rotating Border */}
         <motion.div
-  initial={{ scale: 0 }}
-  animate={{ scale: 1 }}
-  transition={{ type: "spring", stiffness: 400, damping: 10, delay: 1.5 }}
-  whileHover={{ scale: 1.1 }}
->
-  <motion.button
-    className="mt-5 px-5 custom-btn"
-    style={{
-      padding: "12px 24px",
-      fontSize: "1.25rem",
-      color: "#fff",
-      border: "none",
-      borderRadius: "30px", // Rounded corners
-      background: "linear-gradient(270deg, #17153B, #2E236C, #433D8B, #C8ACD6)",
-      backgroundSize: "400% 400%",
-      position: "relative",
-      zIndex: 1,
-    }}
-    animate={{
-      backgroundPosition: ["0% 50%", "100% 50%"], // Continuous horizontal movement
-    }}
-    transition={{
-      duration: 8,
-      repeat: Infinity,
-      ease: "linear",
-    }}
-    whileHover={{ scale: 1.2 }}
-  >
-    Discover My Work
-  </motion.button>
-</motion.div>
-
-
-
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 10,
+            delay: 1.5,
+          }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <motion.button
+            className="mt-5 px-5 custom-btn"
+            style={{
+              padding: "12px 24px",
+              fontSize: "1.25rem",
+              color: "#fff",
+              border: "none",
+              borderRadius: "30px",
+              background:
+                "linear-gradient(270deg, #17153B, #2E236C, #433D8B, #C8ACD6)",
+              backgroundSize: "400% 400%",
+              position: "relative",
+              zIndex: 1,
+            }}
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%"],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+            whileHover={{ scale: 1.2 }}
+          >
+            Discover My Work
+          </motion.button>
+        </motion.div>
       </Container>
     </section>
   );
